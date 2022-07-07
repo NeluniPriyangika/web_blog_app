@@ -8,11 +8,11 @@ export default function Sidebar() {
             <span className='sidebarTitle'>ABOUT ME</span>
             <img
                 className='sidebarImg' 
-                src='' 
+                src='https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?cs=srgb&dl=pexels-christina-morillo-1181690.jpg&fm=jpg' 
                 alt=''
             />
             <p className='sidebarP'>I am a software engineer who creates high-performing applications with organized architecture.
-                 I'm also experienced in product design and client relations.And i love to travel and enjoy my self.
+                 I'm also experienced in product design and client relations. And i love to travel and enjoy my self.
             </p>
         </div>
         <div className="sidebarItem">
