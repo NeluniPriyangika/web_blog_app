@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 export default function TopBar() {
-  const user= false;
+  const user= true;
   return (
     <div className="top">
         <div className="topLeft">
@@ -17,7 +17,7 @@ export default function TopBar() {
           <ul className="topList">
             <li className="topListItem" ><Link className='link' to="/">HOME</Link></li>
             <li className="topListItem"><Link className='link' to="/about">ABOUT</Link></li>
-            <li className="topListItem"><Link className='link' to="/">CONTACT</Link></li>
+            <li className="topListItem"><Link className='link' to="/contact">CONTACT</Link></li>
             <li className="topListItem"><Link className='link' to="/write">WRITE</Link></li>
             <li className="topListItem">{user && "LOGOUT"}</li>
           </ul>
