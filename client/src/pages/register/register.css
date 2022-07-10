@@ -53,3 +53,8 @@
     color: white;
     border-radius: 10px;
 }
+
+.registerErr{
+    color: red;
+    margin-top: 10px;
+}
