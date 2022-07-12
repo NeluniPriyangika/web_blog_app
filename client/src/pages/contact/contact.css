@@ -1,0 +1,62 @@
+.contact{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+        ), 
+        url('https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-443446.jpg&fm=jpg');
+    background-size: cover;
+
+    
+}
+
+.contactItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contactTitle{
+    margin: 15px;
+    padding: 10px;
+    border-top: 2px solid #dfa539;
+    border-bottom: 2px solid #dfa539;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    color: rgb(150, 53, 53);
+    font-weight: 600;
+    line-height: 20px;    
+    margin-bottom: 60px;
+     
+    
+}
+
+.contactList{
+    list-style: none;
+    margin-bottom: 80px;
+}
+
+.contactListItem{
+    display: inline-block;
+    width: 50%;
+    font-size: 40px;
+}
+
+.contactSocial{
+    margin-top: 15px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactIcon{
+    font-size: 60px;
+    margin-left: 30px;
+    cursor: pointer;
+}

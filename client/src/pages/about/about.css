@@ -1,71 +1,50 @@
 .about{
-    flex: 3;
-    margin: 20px;
-    padding-bottom: 30px;
-    background-color: #fdfbfb;
-    border-radius: 10px;
+    height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+        ), 
+        url('https://images.pexels.com/photos/5270358/pexels-photo-5270358.jpeg?cs=srgb&dl=pexels-erik-karits-5270358.jpg&fm=jpg');
+    background-size: cover;
 }
 
 .aboutItem{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    
-    
-}
-
-.aboutTitle{
-    margin: 10px;
-    padding: 5px;
-    border-top: 1px solid #a7a4a4;
-    border-bottom: 1px solid #a7a4a4;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    color: #222;
-    font-weight: 600;
-    line-height: 20px;    
-}
-
-.aboutP{
-    font-size: 15px;
-}
-
-.aboutItem > img {
-    margin-top: 15px;
-    width: 270px;
-    height: 200px;
-}
-
-.aboutItem > p {
-    padding: 30px;
-}
-
-.aboutList{
-    list-style: none;
     margin-bottom: 30px;
 }
 
-.aboutListItem{
-    display: inline-block;
-    width: 50%;
-    margin-top: 15px;
+.aboutP{
+    font-size: 30px;
 }
 
-.aboutSocial{
-    margin-top: 15px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.aboutTitle{
+    margin: 15px;
+    padding: 10px;
+    border-top: 2px solid rgb(112, 108, 111);
+    border-bottom: 2px solid rgb(112, 108, 111);
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    color:  rgb(59, 61, 32);
+    font-weight: 600;
+    line-height: 20px;    
+    margin-bottom: 90px;
 }
 
-.Icon{
-    font-size: 16px;
-    margin-left: 10px;
-    cursor: pointer;
+.aboutThankDiv{
+    margin-top: 40px;
+}
+
+.aboutThank{
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    color: rgb(90, 1, 63);
+    font-weight: 600;
+    line-height: 20px; 
 }
