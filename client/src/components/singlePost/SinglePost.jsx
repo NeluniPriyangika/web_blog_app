@@ -35,7 +35,17 @@ export default function SinglePost() {
             });
             window.location.replace("/");
         }catch(err){}
-    }
+    };
+     const handleUpadte = async ()=>{
+        try{
+            await axios.put(`/posts/${post._id}`,{
+                username:user.username, 
+                title, 
+                desc,
+            });
+            setUpadteMode(false)
+        }catch(err){}
+    };
 
   return (
     <div className='singlePost'>
@@ -56,7 +66,7 @@ export default function SinglePost() {
                         onChange={(e) => setTitle(e.target.value)}/>
                     ):(
                     <h1 className='singlePostTitle'>
-                        {post.title}
+                        {title}
                         {post.username === user?.username &&(
                             <div className="singlePostEdit">
                                 <i 
@@ -86,8 +96,13 @@ export default function SinglePost() {
                 value={desc} 
                 onChange={(e) => setDesc(e.target.value)}/>
             ):(
-                <p className='singlePostDesc'>{post.desc}</p>
+                <p className='singlePostDesc'>{desc}</p>
             )}
+            {updateMode && (
+                <button 
+                    className="singlePostButton" 
+                    onClick={handleUpadte}>Update</button>
+            )}   
         </div>
     </div>
   )
