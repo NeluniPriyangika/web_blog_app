@@ -13,7 +13,7 @@ export default function Sidebar() {
         {
             const res = await axios.get("/categories")
             setCats(res.data)
-        }
+        };
         getCats();
     },[])
   return (

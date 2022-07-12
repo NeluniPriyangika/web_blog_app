@@ -13,7 +13,6 @@ export default function Write() {
     const[file,setFile] = useState("null");
     const {user} = useContext(Context);
 
-
     const handleSubmit = async (e) =>{
         e.preventDefault();
         const newPost = {
