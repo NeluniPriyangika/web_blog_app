@@ -2,9 +2,10 @@ import React from 'react';
 import "./login.css";
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
-import { Context } from '../../context/Context';
+import { Context} from '../../context/Context';
 import axios from 'axios';
 import { useRef } from 'react';
+import { LoginSuccess } from '../../context/Actions';
 
 export default function Login() {
 
@@ -20,7 +21,7 @@ export default function Login() {
         username: userRef.current.value,
         password: passwordRef.current.value,
       })
-      dispatch({type:"LOGIN_SUCCESS",payload:res.data });
+      dispatch(LoginSuccess(res.data));
     }catch(err){
       dispatch({type:"LOGIN_FAILURE"});
     }
